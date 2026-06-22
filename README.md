@@ -1,59 +1,114 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ERP Lite UMKM 🥇
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi web ERP (Enterprise Resource Planning) Lite yang dirancang khusus untuk mempermudah operasional Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia. Dibangun dengan konsep desain **gelap premium (dark mode)** dan **glassmorphism** yang visual, modern, dan interaktif.
 
-## About Laravel
+Sistem ini terintegrasi penuh menggunakan database **SQLite** lokal untuk penyimpanan data yang persisten.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Fitur Utama
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. **Dashboard Performa Real-time**:
+   - Ringkasan otomatis total omset penjualan, pengeluaran operasional, laba bersih, dan jumlah transaksi.
+   - Grafik garis kustom untuk tren penjualan 7 hari terakhir.
+   - Grafik lingkaran kustom untuk distribusi kategori barang terjual.
+   - Panel peringatan stok menipis/habis dan log transaksi terbaru.
 
-## Learning Laravel
+2. **Point of Sale (POS) / Kasir**:
+   - Input transaksi belanja cepat dengan filter kategori produk dan pencarian SKU.
+   - Keranjang belanja interaktif dengan penyesuaian kuantitas barang otomatis.
+   - Perhitungan diskon rupiah dan pajak PPN 10%.
+   - Integrasi database pelanggan (CRM) untuk akumulasi poin loyalitas.
+   - Visualisasi struk thermal digital siap cetak.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+3. **Manajemen Inventaris & Stok**:
+   - Daftar katalog produk lengkap dengan info harga, SKU, dan status persediaan.
+   - Penyesuaian stok instan (`+` / `-`) langsung pada kartu produk tanpa modal yang rumit.
+   - Deteksi otomatis stok menipis/kritis.
+   - Form penambahan produk baru dengan preset dekorasi warna visual.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+4. **Buku Kas & Catatan Keuangan**:
+   - Analisis arus kas bulanan dan margin keuntungan bersih.
+   - Donut chart visualisasi alokasi pengeluaran operasional (Bahan Baku, Gaji, Utilitas, dll.).
+   - Jurnal keuangan untuk mencatat pengeluaran/pemasukan manual secara rapi.
 
-## Laravel Sponsors
+5. **Program Loyalitas Pelanggan (CRM)**:
+   - Database lengkap pelanggan dengan nomor kontak aktif.
+   - Akumulasi poin belanja otomatis (setiap transaksi Rp 1.000 = +1 poin).
+   - Penentuan level tiering loyalitas otomatis berdasarkan poin:
+     - 🥉 **Bronze Member** (< 300 Poin)
+     - 🥈 **Silver Member** (300 - 749 Poin)
+     - 🥇 **Gold Member** (>= 750 Poin)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🛠️ Tech Stack
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- **Backend**: Laravel 12 (PHP v8.2+) & SQLite.
+- **Frontend**: React, TypeScript, Inertia.js (Single Page Application).
+- **Build Tool**: Vite.
+- **Styling**: Vanilla CSS kustom (Glassmorphism & Animasi) tanpa overhead framework CSS eksternal.
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 💻 Cara Menjalankan Proyek Secara Lokal
 
-## Code of Conduct
+### Prerequisites
+Pastikan komputer Anda sudah terinstal:
+- PHP (v8.2 ke atas)
+- Composer
+- Node.js & npm
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Langkah Instalasi
 
-## Security Vulnerabilities
+1. **Clone / Download Proyek** dan masuk ke folder proyek:
+   ```bash
+   cd d:\Project
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+2. **Instal Dependensi Backend (PHP)**:
+   ```bash
+   composer install
+   ```
 
-## License
+3. **Instal Dependensi Frontend (Node)**:
+   ```bash
+   npm install --legacy-peer-deps
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+4. **Konfigurasi Environment**:
+   Salin berkas `.env.example` menjadi `.env` (SQLite akan otomatis mendeteksi database lokal):
+   ```bash
+   copy .env.example .env
+   ```
+
+5. **Migrasi dan Pengisian Data Demo**:
+   Wipe database lama, buat tabel baru, dan isi database SQLite dengan data simulasi toko Kopi & Bakery:
+   ```bash
+   php artisan migrate:fresh --seed
+   ```
+
+6. **Kompilasi Aset Frontend (Vite)**:
+   - Untuk pengembangan lokal (Hot Reload):
+     ```bash
+     npm run dev
+     ```
+   - Untuk build produksi (Teroptimasi):
+     ```bash
+     npm run build
+     ```
+
+7. **Jalankan Laravel Local Server**:
+   ```bash
+   php artisan serve
+   ```
+
+---
+
+## 🔑 Akun Demo Pengujian
+
+Akses aplikasi di browser Anda melalui alamat: **[http://127.0.0.1:8000](http://127.0.0.1:8000)**.
+
+Masuk menggunakan akun administrator bawaan berikut:
+- **Email:** `admin@umkm.com`
+- **Password:** `password`
